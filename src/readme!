@@ -1,0 +1,6 @@
+sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+
+add:
+@/home/pi/aurora.sh
+
+

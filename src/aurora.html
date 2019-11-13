@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+	<head>
+	<meta http-equiv="refresh" content="600">
+	<style>
+	body {
+		background-color:black;
+		overflow-x:hidden; /*hide scroll bars!*/
+		overflow-y:hidden;
+		cursor: none; /*hide mouse pointer*/
+	}
+	#main {
+		margin-left: auto;
+		margin-right: auto;		
+	}
+
+	#sweather{
+		display:block;
+		width: 70%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#aurora {
+		display: block;
+		width: 100%;
+		-webkit-filter:invert(100%) hue-rotate(140deg);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	img {
+		max-height:480px;
+	}
+
+	.nocursor { cursor:none; }
+
+	</style>
+
+	<script type = "text/javascript">
+		x=0;
+		function displayNextMedia() {
+			document.getElementById("main").innerHTML = media[x];
+			if(x == media.length-1){
+				x=0;
+			}else{
+				x++;
+			};
+			console.log(x);
+		}
+
+		function startTimer() {
+			setInterval(displayNextImage, 300000);
+		}
+
+		var media = [];
+		media[0] = '<img src="https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg" id="spaceweather">';
+		media[1] = '<img src="https://aurorawatch.lancs.ac.uk/summary/alerting-site-rolling-activity.png" id="aurora">';
+
+	</script>
+
+	</head>
+	<body onload = "startTimer()" >
+
+	<div id="main">
+		<img src="https://aurorawatch.lancs.ac.uk/summary/alerting-site-rolling-activity.png" id="aurora">
+	</div>
+
+
+
+	</body>
+</html>

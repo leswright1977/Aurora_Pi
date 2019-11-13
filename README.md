@@ -15,7 +15,7 @@ aurora.sh starts Chromium in Kiosk mode, full screen, and loads aurora.html
 
 aurora.html shows a web page and loads in images from:
 
-https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg"
-https://aurorawatch.lancs.ac.uk/summary/alerting-site-rolling-activity.png" 
+https://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.jpg
+https://aurorawatch.lancs.ac.uk/summary/alerting-site-rolling-activity.png
 
 These run a cycle with a bit of JavaScript

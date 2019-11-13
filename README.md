@@ -1,5 +1,5 @@
 # Aurora_Pi
-Raspberry Pi with a hyperpixel LCD display to display Aurora Forecasts on a loop, so that the next time there is Aurora, I don;t miss it!
+Raspberry Pi with a hyperpixel LCD display to display Aurora Forecasts on a loop, so that the next time there is Aurora, I don't miss it!
 
 Images soon!
 
